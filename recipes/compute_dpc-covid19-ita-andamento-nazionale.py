@@ -14,11 +14,11 @@ data_github_info = data_github.get_info()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 url = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv'
-df = pd.read_csv(url, index_col=0)
+pd.read_csv(url, index_col=None)
 # print(df.head(5))
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-dpc_covid19_ita_andamento_nazionale_df = pd.DataFrame(df)
+dpc_covid19_ita_andamento_nazionale_df = pd.DataFrame(df).reset_index()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Compute recipe outputs

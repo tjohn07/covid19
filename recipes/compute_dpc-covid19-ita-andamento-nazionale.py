@@ -14,7 +14,7 @@ data_github_info = data_github.get_info()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 url = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv'
-pd.read_csv(url, index_col=None)
+df = pd.read_csv(url, index_col=None)
 # print(df.head(5))
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE

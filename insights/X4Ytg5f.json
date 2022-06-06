@@ -1,0 +1,185 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "dati_province_prepared",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "admin_map",
+      "variant": "normal",
+      "name": "New chart",
+      "userEditedName": false,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [
+        {
+          "column": "totale_casi",
+          "function": "MAX",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        }
+      ],
+      "sizeMeasure": [],
+      "geometry": [
+        {
+          "column": "geopoint",
+          "type": "GEOPOINT",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 6
+        }
+      ],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "gyr1",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABIpJREFUeF7t2U9oHHUUB/A3m90gTdrmTWKiLLEtSWO12bbb2T+XKg1oiYeCBi2odRF6aSmCh3rUg/akoF6kXgQZWoX676CgrYUUEpTs7riJ27Q2f2zRxjQxnV+qRtRsdmTEhSJiO7+A7Hvz9rj7e/De9zNvGGYNkA/rBAzW08lwIMDMLwIBFmDmCTAfTzZYgJknwHw82WABZp4A8/FkgwWYeQLMx5MNFmDmCTAfTzZYgJknwHw82WABZp4A8/FkgwWYeQLMx5MNFmDmCTAfTzZYgJknwHw82WABZp4A8/FkgwWYfgJ7yubI6YSbpT9J8AlYb/C9JRw6n1T31WLpnjTXTW12fwoeE90KdsA9DtoTlso9Ng6N722FP3yag9/gyTe3qH10mfQ7ZwfsRzEwjvZvVUidiHnv4JbFo/2llt2fJRfP7im3vHU6sXhAPy56leyA73ZwtNlTaScFyzWO5ybw1MKKF7lSMWY/T6gcPSb9jlkBu2/jp+bT6qEjF83CpYr3+/1N8O3QEkTe36r2xwtYmkmrpH5UNCtZAfsEO0fR7m2ERHMD/DK3DGs/6FU7/O83FnHwckr10WTS75oV8INltG+8BQ+ca+vbEFt5FQDKnyxBw+RO9aR+VDQrWQH7BNtK+PHXSbV3k4PbYgBH/Cfqv2hOQgPsgxWaTPpdswLuLZmvn0u6z94YR2ex9eF1Dd7L40m3Z9cYvju8XT2uHxe9SlbA/xZ/l4P2tKVydzlof2epXGYU7fyO8DxJsweOF/CLKng/zKYXH+3+CgcND9b+XIXJq+lwbDJ7YH+r7yygPZtWORiEKPRBpb2Ix+dTaj+9G27wjkMB7MfSUcRhrwpVw4BIYwQq31tqd/C46FWEBrhGc8eXLRsrMeNos2G0XbbcfnpkwToOFfDzU+aHL3W7A7WI2vM4PJ9Ru4JFRut0qIB9mriDtgHGmqUVb03MMF7DqJe7mFRP0WK79W5DB1yLxn/wWq4CLGRVriOPJ+YyPN9ysQTucvCjaUs98l/X+QNjaJ9ZVgfg73+dEiU8W07ye/BiCXzrNzCADUUc/bUKFzyAzWDA+dsM6LzC6E8JlsBm3uz3PO8JldV7YxUv4qGZlDoW5EKp17MsgVud1nuuWdcu1Gvo/2dfLIFxBI+rbDjeVN3sYmEJvH5k/abr2euXbjb8P3/vGOtomts+txS0rp7PswQOGrg5Yp6KRL0zC5Z6JWhtvZ8XYABoz5sT8xm3p96xdPoLJXC8aL44k3Jf8N9qzVgqd3sBD/+YVm/oBFjvNeEELuAxD6CzKQLepKX21jvSavoLJXBbAYeqVYiaUShOWeqZ1QRY77WhBK6hmHmcdjOqq96RVtNfqIFXExyVWgGmIqXZpwBrBkelTICpSGn2KcCawVEpE2AqUpp9CrBmcFTKBJiKlGafAqwZHJUyAaYipdmnAGsGR6VMgKlIafYpwJrBUSkTYCpSmn0KsGZwVMoEmIqUZp8CrBkclTIBpiKl2acAawZHpUyAqUhp9inAmsFRKRNgKlKafQqwZnBUygSYipRmn38ClhEeYPBLDJ8AAAAASUVORK5CYII\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "New chart on dati_province_prepared",
+  "dashboardCreationId": "xYw00uy",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654551737418
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654551737418
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -67,8 +67,9 @@
     },
     "codeEnvs": {
       "python": {
-        "mode": "INHERIT",
-        "preventOverride": false
+        "mode": "EXPLICIT_ENV",
+        "preventOverride": false,
+        "envName": "python37_holidays"
       },
       "r": {
         "mode": "INHERIT",
@@ -192,11 +193,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654551737332
+    "lastModifiedOn": 1654553990477
   },
   "creationTag": {
     "versionNumber": 0,

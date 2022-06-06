@@ -26,8 +26,45 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "",
+        "formats": [
+          "yyyy-MM-dd\u0027T\u0027HH:mm:ss"
+        ],
+        "columns": [
+          "data"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "index"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -53,7 +90,34 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "totale_ospedalizzati": 165,
+    "note": 100,
+    "data": 148,
+    "variazione_totale_positivi": 210,
+    "casi_testati": 134,
+    "ricoverati_con_sintomi": 180,
+    "tamponi_test_molecolare": 188,
+    "deceduti": 100,
+    "stato": 100,
+    "dimessi_guariti": 128,
+    "totale_positivi_test_molecolare": 248,
+    "tamponi": 100,
+    "note_test": 100,
+    "tamponi_test_antigenico_rapido": 240,
+    "terapia_intensiva": 143,
+    "data_parsed": 183,
+    "totale_positivi_test_antigenico_rapido": 300,
+    "casi_da_sospetto_diagnostico": 225,
+    "totale_casi": 100,
+    "index": 100,
+    "totale_positivi": 128,
+    "isolamento_domiciliare": 180,
+    "nuovi_positivi": 120,
+    "ingressi_terapia_intensiva": 210,
+    "note_casi": 100,
+    "casi_da_screening": 143
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

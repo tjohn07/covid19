@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654550931808
+    "lastModifiedOn": 1654551011989
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,14 +103,6 @@
         "type": "string"
       },
       {
-        "name": "codice_provincia",
-        "type": "bigint"
-      },
-      {
-        "name": "denominazione_provincia",
-        "type": "string"
-      },
-      {
         "name": "lat",
         "type": "double"
       },
@@ -119,8 +111,88 @@
         "type": "double"
       },
       {
+        "name": "ricoverati_con_sintomi",
+        "type": "bigint"
+      },
+      {
+        "name": "terapia_intensiva",
+        "type": "bigint"
+      },
+      {
+        "name": "totale_ospedalizzati",
+        "type": "bigint"
+      },
+      {
+        "name": "isolamento_domiciliare",
+        "type": "bigint"
+      },
+      {
+        "name": "totale_positivi",
+        "type": "bigint"
+      },
+      {
+        "name": "variazione_totale_positivi",
+        "type": "bigint"
+      },
+      {
+        "name": "nuovi_positivi",
+        "type": "bigint"
+      },
+      {
+        "name": "dimessi_guariti",
+        "type": "bigint"
+      },
+      {
+        "name": "deceduti",
+        "type": "bigint"
+      },
+      {
+        "name": "casi_da_sospetto_diagnostico",
+        "type": "double"
+      },
+      {
+        "name": "casi_da_screening",
+        "type": "double"
+      },
+      {
         "name": "totale_casi",
         "type": "bigint"
+      },
+      {
+        "name": "tamponi",
+        "type": "bigint"
+      },
+      {
+        "name": "casi_testati",
+        "type": "double"
+      },
+      {
+        "name": "ingressi_terapia_intensiva",
+        "type": "double"
+      },
+      {
+        "name": "note_test",
+        "type": "string"
+      },
+      {
+        "name": "note_casi",
+        "type": "string"
+      },
+      {
+        "name": "totale_positivi_test_molecolare",
+        "type": "double"
+      },
+      {
+        "name": "totale_positivi_test_antigenico_rapido",
+        "type": "double"
+      },
+      {
+        "name": "tamponi_test_molecolare",
+        "type": "double"
+      },
+      {
+        "name": "tamponi_test_antigenico_rapido",
+        "type": "double"
       },
       {
         "name": "geopoint",

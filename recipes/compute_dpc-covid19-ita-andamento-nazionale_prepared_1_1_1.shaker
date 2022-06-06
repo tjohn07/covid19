@@ -83,11 +83,9 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
-          "sigla_provincia",
           "note",
           "codice_nuts_2",
-          "codice_nuts_1",
-          "codice_nuts_3"
+          "codice_nuts_1"
         ],
         "keep": false,
         "appliesTo": "COLUMNS"

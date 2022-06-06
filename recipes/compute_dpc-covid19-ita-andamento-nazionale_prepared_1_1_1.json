@@ -17,6 +17,9 @@
             },
             "dati_province": {
               "repartition": 10
+            },
+            "dati_regione": {
+              "repartition": 10
             }
           }
         },
@@ -78,11 +81,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654550931820
+    "lastModifiedOn": 1654551012159
   },
   "creationTag": {
     "versionNumber": 0,

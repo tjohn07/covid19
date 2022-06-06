@@ -11,6 +11,9 @@
           "map": {
             "dpc-covid19-ita-andamento-nazionale": {
               "repartition": 10
+            },
+            "dpc_covid19": {
+              "repartition": 10
             }
           }
         },
@@ -72,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654548248493
+    "lastModifiedOn": 1654548252252
   },
   "creationTag": {
     "versionNumber": 0,

@@ -3,7 +3,7 @@
   "id": "Daily_Data_Refresh",
   "type": "step_based",
   "name": "Daily Data Refresh",
-  "active": false,
+  "active": true,
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -12,11 +12,11 @@
     "lastModifiedOn": 1654548368552
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654548368552
+    "lastModifiedOn": 1654548550785
   },
   "checklists": {
     "checklists": []
@@ -27,10 +27,56 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "xMPZkrcz",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Daily",
+        "startingFrom": "2022-06-07T20:46:00.000Z",
+        "daysOfWeek": [
+          "Monday"
+        ],
+        "minute": 0,
+        "hour": 8,
+        "timezone": "SERVER"
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_dpc_covid19_prepared",
+        "type": "build_flowitem",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "dpc_covid19_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}

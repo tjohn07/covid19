@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654552661221
+    "lastModifiedOn": 1654552789503
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,93 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "codice_provincia",
+        "type": "bigint"
+      },
+      {
+        "name": "codice_provincia_avg",
+        "type": "double"
+      },
+      {
+        "name": "codice_provincia_sum",
+        "type": "double"
+      },
+      {
+        "name": "codice_regione",
+        "type": "bigint"
+      },
+      {
+        "name": "codice_regione_avg",
+        "type": "double"
+      },
+      {
+        "name": "codice_regione_sum",
+        "type": "double"
+      },
+      {
+        "name": "data",
+        "type": "date"
+      },
+      {
+        "name": "lat",
+        "type": "double"
+      },
+      {
+        "name": "lat_avg",
+        "type": "double"
+      },
+      {
+        "name": "lat_sum",
+        "type": "double"
+      },
+      {
+        "name": "long",
+        "type": "double"
+      },
+      {
+        "name": "long_avg",
+        "type": "double"
+      },
+      {
+        "name": "long_sum",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi",
+        "type": "bigint"
+      },
+      {
+        "name": "totale_casi_avg",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi_sum",
+        "type": "double"
+      },
+      {
+        "name": "trivial_identity_totale_casi",
+        "type": "float"
+      },
+      {
+        "name": "seasonal_naive_totale_casi",
+        "type": "float"
+      },
+      {
+        "name": "simplefeedforward_totale_casi",
+        "type": "float"
+      },
+      {
+        "name": "row_origin",
+        "type": "string"
+      },
+      {
+        "name": "training_session",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {

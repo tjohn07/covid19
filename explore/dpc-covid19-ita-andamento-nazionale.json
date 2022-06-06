@@ -1,0 +1,100 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "index": 100,
+      "data": 148,
+      "stato": 100,
+      "ricoverati_con_sintomi": 180,
+      "terapia_intensiva": 143,
+      "totale_ospedalizzati": 165,
+      "isolamento_domiciliare": 180,
+      "totale_positivi": 128,
+      "variazione_totale_positivi": 210,
+      "nuovi_positivi": 120,
+      "dimessi_guariti": 128,
+      "deceduti": 100,
+      "casi_da_sospetto_diagnostico": 225,
+      "casi_da_screening": 143,
+      "totale_casi": 100,
+      "tamponi": 100,
+      "casi_testati": 134,
+      "note": 100,
+      "ingressi_terapia_intensiva": 210,
+      "note_test": 100,
+      "note_casi": 100,
+      "totale_positivi_test_molecolare": 248,
+      "totale_positivi_test_antigenico_rapido": 300,
+      "tamponi_test_molecolare": 188,
+      "tamponi_test_antigenico_rapido": 240
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [
+      {
+        "column": "data",
+        "ascending": true
+      }
+    ],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

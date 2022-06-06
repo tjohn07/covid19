@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654552789503
+    "lastModifiedOn": 1654552791934
   },
   "creationTag": {
     "versionNumber": 0,
@@ -152,23 +152,28 @@
       },
       {
         "name": "trivial_identity_totale_casi",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "seasonal_naive_totale_casi",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "simplefeedforward_totale_casi",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "row_origin",
-        "type": "string"
+        "type": "string",
+        "comment": "Row origin"
       },
       {
         "name": "training_session",
-        "type": "string"
+        "type": "string",
+        "comment": "Timestamp of training session"
       }
     ],
     "userModified": false

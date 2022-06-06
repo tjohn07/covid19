@@ -14,6 +14,9 @@
             },
             "dpc_covid19": {
               "repartition": 10
+            },
+            "dati_province": {
+              "repartition": 10
             }
           }
         },
@@ -75,11 +78,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654550457084
+    "lastModifiedOn": 1654550670775
   },
   "creationTag": {
     "versionNumber": 0,

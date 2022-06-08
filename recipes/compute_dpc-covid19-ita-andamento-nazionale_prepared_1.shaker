@@ -63,6 +63,23 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "jython-processor-holidays-holidays",
+      "params": {
+        "customConfig": {
+          "country": "IT",
+          "flag_weekends": true,
+          "output_holiday_name": false,
+          "input_column": "data"
+        },
+        "sourceColumnsList": [],
+        "vectorSize": 32
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -93,6 +110,7 @@
   "columnWidthsByName": {
     "totale_ospedalizzati": 165,
     "note": 100,
+    "is_holiday": 100,
     "data": 148,
     "variazione_totale_positivi": 210,
     "casi_testati": 134,
@@ -107,6 +125,7 @@
     "tamponi_test_antigenico_rapido": 240,
     "terapia_intensiva": 143,
     "data_parsed": 183,
+    "is_weekend": 100,
     "totale_positivi_test_antigenico_rapido": 300,
     "casi_da_sospetto_diagnostico": 225,
     "totale_casi": 100,

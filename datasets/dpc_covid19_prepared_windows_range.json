@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654702532897
+    "lastModifiedOn": 1654702576879
   },
   "creationTag": {
     "versionNumber": 0,
@@ -185,6 +185,18 @@
       {
         "name": "ntile10",
         "type": "bigint"
+      },
+      {
+        "name": "nuovi_positivi_min",
+        "type": "bigint"
+      },
+      {
+        "name": "nuovi_positivi_max",
+        "type": "bigint"
+      },
+      {
+        "name": "nuovi_positivi_avg",
+        "type": "double"
       }
     ],
     "userModified": true

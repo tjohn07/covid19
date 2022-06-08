@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654702237358
+    "lastModifiedOn": 1654702365984
   },
   "creationTag": {
     "versionNumber": 0,
@@ -181,6 +181,10 @@
       {
         "name": "tamponi_test_antigenico_rapido",
         "type": "double"
+      },
+      {
+        "name": "ntile10",
+        "type": "bigint"
       }
     ],
     "userModified": true

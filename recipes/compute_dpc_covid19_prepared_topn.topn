@@ -32,8 +32,8 @@
     "tamponi_test_molecolare",
     "tamponi_test_antigenico_rapido"
   ],
-  "lastRows": 0,
-  "duplicateCount": false,
+  "lastRows": 1,
+  "duplicateCount": true,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -68,9 +68,14 @@
       }
     }
   },
-  "rank": false,
-  "denseRank": false,
-  "orders": [],
-  "rowNumber": false,
+  "rank": true,
+  "denseRank": true,
+  "orders": [
+    {
+      "column": "nuovi_positivi",
+      "desc": false
+    }
+  ],
+  "rowNumber": true,
   "outputColumnNameOverrides": {}
 }

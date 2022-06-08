@@ -25,7 +25,7 @@ ntile10_df.head()
 dpc_df.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-#Set variables for ntile ranges in order to compare to other dataset 
+#Set variables for ntile ranges in order to compare to other dataset
 for num in range(1,11):
     variables["standard"][f'n{num}'] = range(int(ntile10_df['nuovi_positivi_min'][ntile10_df['ntile10'] == num]), int(ntile10_df['nuovi_positivi_max'][ntile10_df['ntile10'] == num]))
 

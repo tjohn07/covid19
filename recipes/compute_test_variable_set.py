@@ -22,13 +22,12 @@ dpc_df = dpc_dataset.get_dataframe()
 ntile10_df.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-dpc_df.head()
+# dpc_df.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 #Set variables for ntile ranges from ntile_range_dataset in order to compare to full dataset
 for num in range(1,11):
-    variables["standard"][f'n{num}'] = range(int(ntile10_df['nuovi_positivi_min'][ntile10_df['ntile10'] == num]), int(ntile10_df['nuovi_positivi_max'][ntile10_df['ntile10'] == num]))
-
+    variables["standard"][f'n{num}'] = range(int(ntile10_df['nuovi_positivi_min'][ntile10_df['ntile10'] == num]), int(ntile10_df['nuovi_positivi_max'][ntile10_df['ntile10'] == num]+1))
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 ntile_dict = {}

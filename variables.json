@@ -1,4 +1,6 @@
 {
   "url": "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv",
-  "csv_name": "dpc_covid19_ita_andamento_nazionale_df"
+  "csv_name": "dpc_covid19_ita_andamento_nazionale_df",
+  "min_new_daily_pos": 74,
+  "max_new_daily_pos": 220532
 }

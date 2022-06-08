@@ -46,4 +46,4 @@ for row in dpc_df['nuovi_positivi']:
 dpc_df['ntile'] = dpc_df['nuovi_positivi'].map(ntile_dict)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-dpc_df.head()
+test_variable_set = dataiku.Dataset("dpc_df")

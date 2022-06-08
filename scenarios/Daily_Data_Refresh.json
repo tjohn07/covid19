@@ -5,18 +5,18 @@
   "name": "Daily Data Refresh",
   "active": true,
   "creationTag": {
-    "versionNumber": 3,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654701757215
-  },
-  "versionTag": {
     "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654702478653
+  },
+  "versionTag": {
+    "versionNumber": 5,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654711551454
   },
   "checklists": {
     "checklists": []
@@ -69,10 +69,36 @@
               "type": "DATASET",
               "itemId": "dpc_covid19_prepared_windows",
               "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "dpc_covid19_prepared_windows_by_ntile10",
+              "partitionsSpec": ""
             }
           ],
           "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "custom_python_qClPRtlPiSzb2+B32bnF9Q",
+        "type": "custom_python",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "from dataiku.scenario import Trigger\nimport dataiku\n\n# Accessing the DSS Global/Project Variables\nproj \u003d dataiku.Project()\nvariables \u003d proj.get_variables()\n\n# \"fSKnhT8i\" refers to the managed folder name that was created before developing the scenario.\n# We\u0027ll use this a little later to check for the triggering file.\n# This reference must be replaced with the client\u0027s managed folder\n# (found at the end of the URL after opening the folder.)\n# test_folder \u003d dataiku.Folder(\"fSKnhT8i\")\n\n# Create a list of current files in the managed folder.\nfile_list \u003d test_folder.list_paths_in_partition()\n\n# Create a list of currently existing global/project variables to test if our length_list has been set.\nglobal_check \u003d list(variables[\u0027global\u0027].keys())\n\n# Testing to see if the length_list global/project variable exists.\n# If it does not, it will be created.\nif \u0027length_list\u0027 not in global_check:\n    length_list \u003d len(file_list)\n    variables[\u0027standard\u0027] \u003d {\"length_list\" : length_list}\n    proj.set_variables(variables)\n\n# If it does exist, the code continues running to the next step.\nelse:\n    continue\n\n# Create variables that we\u0027ll use to test the file list length.\ncurrent_length_list \u003d len(file_list)\nvar_length_list \u003d int(dataiku.get_custom_variables().get(\"length_list\"))\nt \u003d Trigger()\n\n# For loop to check if the trigger file name already exists in the Managed folder.\n# Once the trigger file is added (in this example \"trigger_file.txt\"),\n# the count variables keep the scenario from running indefinitely.\nfor file in file_list:\n    if current_length_list \u003e var_length_list and file \u003d\u003d \u0027/trigger_file.txt\u0027:\n        t.fire()\n\n# Now we reset the results as DSS Global/Project variables.\nvariables[\u0027standard\u0027] \u003d {\"length_list\" : current_length_list}\nproj.set_variables(variables)",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
           "proceedOnFailure": false
         }
       }

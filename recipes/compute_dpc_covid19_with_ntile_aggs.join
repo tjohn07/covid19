@@ -1,0 +1,196 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "ntile10",
+      "table": 0
+    },
+    {
+      "name": "nuovi_positivi_min",
+      "table": 0
+    },
+    {
+      "name": "nuovi_positivi_max",
+      "table": 0
+    },
+    {
+      "name": "nuovi_positivi_avg",
+      "table": 0
+    },
+    {
+      "name": "nuovi_positivi_sum",
+      "table": 0
+    },
+    {
+      "name": "nuovi_positivi_stddev",
+      "table": 0
+    },
+    {
+      "name": "count",
+      "table": 0
+    },
+    {
+      "name": "data",
+      "table": 1
+    },
+    {
+      "name": "stato",
+      "table": 1
+    },
+    {
+      "name": "ricoverati_con_sintomi",
+      "table": 1
+    },
+    {
+      "name": "terapia_intensiva",
+      "table": 1
+    },
+    {
+      "name": "totale_ospedalizzati",
+      "table": 1
+    },
+    {
+      "name": "isolamento_domiciliare",
+      "table": 1
+    },
+    {
+      "name": "totale_positivi",
+      "table": 1
+    },
+    {
+      "name": "variazione_totale_positivi",
+      "table": 1
+    },
+    {
+      "name": "nuovi_positivi",
+      "table": 1
+    },
+    {
+      "name": "dimessi_guariti",
+      "table": 1
+    },
+    {
+      "name": "deceduti",
+      "table": 1
+    },
+    {
+      "name": "casi_da_sospetto_diagnostico",
+      "table": 1
+    },
+    {
+      "name": "casi_da_screening",
+      "table": 1
+    },
+    {
+      "name": "totale_casi",
+      "table": 1
+    },
+    {
+      "name": "tamponi",
+      "table": 1
+    },
+    {
+      "name": "casi_testati",
+      "table": 1
+    },
+    {
+      "name": "note",
+      "table": 1
+    },
+    {
+      "name": "ingressi_terapia_intensiva",
+      "table": 1
+    },
+    {
+      "name": "note_test",
+      "table": 1
+    },
+    {
+      "name": "note_casi",
+      "table": 1
+    },
+    {
+      "name": "totale_positivi_test_molecolare",
+      "table": 1
+    },
+    {
+      "name": "totale_positivi_test_antigenico_rapido",
+      "table": 1
+    },
+    {
+      "name": "tamponi_test_molecolare",
+      "table": 1
+    },
+    {
+      "name": "tamponi_test_antigenico_rapido",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "dpc_covid19_prepared_windows_by_ntile10",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "dpc_covid19_prepared",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}

@@ -39,7 +39,7 @@
       "params": {
         "outCol": "",
         "formats": [
-          "yyyy-MM-dd\u0027T\u0027HH:mm:ss"
+          "yyyy-MM-dd"
         ],
         "columns": [
           "data"

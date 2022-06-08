@@ -20,7 +20,16 @@
   "dkuProperties": [],
   "inputs": {
     "main": {
-      "items": []
+      "items": [
+        {
+          "ref": "dpc_covid19_prepared_windows_by_ntile10",
+          "deps": []
+        },
+        {
+          "ref": "dpc_covid19_prepared",
+          "deps": []
+        }
+      ]
     }
   },
   "outputs": {
@@ -35,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654711838635
+    "lastModifiedOn": 1654711880327
   },
   "creationTag": {
     "versionNumber": 0,

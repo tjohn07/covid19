@@ -9,6 +9,9 @@ url = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-
 df = pd.read_csv(url, index_col=None)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df['data'] = pd.to_datetime(df['data'])
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 dpc_covid19_ita_andamento_nazionale_df = pd.DataFrame(df).reset_index()
 
 # Write recipe outputs

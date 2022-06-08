@@ -1,46 +1,49 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
-
-
-
 from dataiku.scenario import Trigger
-import dataiku
+
 
 # Accessing the DSS Global/Project Variables
 proj = dataiku.Project()
 variables = proj.get_variables()
 
-# Create a list of current files in the managed folder.
-file_list = test_folder.list_paths_in_partition()
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+ntile10_dataset = dataiku.Dataset("dpc_covid19_prepared_windows_by_ntile10")
+dpc_dataset = dataiku.Dataset("dpc_covid19_prepared")
 
-# Create a list of currently existing global/project variables to test if our length_list has been set.
-global_check = list(variables['standard'].keys())
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+ntile10_df = ntile10_dataset.get_dataframe()
+dpc_df = dpc_dataset.get_dataframe()
 
-# Testing to see if the length_list global/project variable exists.
-# If it does not, it will be created.
-if 'length_list' not in global_check:
-    length_list = len(file_list)
-    variables['standard'] = {"length_list" : length_list}
-    proj.set_variables(variables)
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+ntile10_df.head()
 
-# If it does exist, the code continues running to the next step.
-else:
-    continue
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+dpc_df.head()
 
-# Create variables that we'll use to test the file list length.
-current_length_list = len(file_list)
-var_length_list = int(dataiku.get_custom_variables().get("length_list"))
-t = Trigger()
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+#Set variables for ntile ranges in order to compare to other dataset 
+for num in range(1,11):
+    variables["standard"][f'n{num}'] = range(int(ntile10_df['nuovi_positivi_min'][ntile10_df['ntile10'] == num]), int(ntile10_df['nuovi_positivi_max'][ntile10_df['ntile10'] == num]))
 
-# For loop to check if the trigger file name already exists in the Managed folder.
-# Once the trigger file is added (in this example "trigger_file.txt"),
-# the count variables keep the scenario from running indefinitely.
-for file in file_list:
-    if current_length_list > var_length_list and file == '/trigger_file.txt':
-        t.fire()
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+variables["standard"]
 
-# Now we reset the results as DSS Global/Project variables.
-variables['standard'] = {"length_list" : current_length_list}
-proj.set_variables(variables)
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# 79 in variables["standard"]['n1']
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+ntile_dict = {}
+for row in dpc_df['nuovi_positivi']:
+    for ntile in range(1,11):
+        if row in variables["standard"][f'n{ntile}']:
+            ntile_dict[row] = int(ntile)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+dpc_df['ntile'] = dpc_df['nuovi_positivi'].map(ntile_dict)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+dpc_df.head()

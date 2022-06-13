@@ -1,0 +1,74 @@
+{
+  "type": "CustomCode_timeseries-forecast-1-train-evaluate",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "input_dataset": {
+      "items": [
+        {
+          "ref": "province_decomp",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "model_folder": {
+      "items": [
+        {
+          "ref": "lYI2c2lO",
+          "appendMode": false
+        }
+      ]
+    },
+    "evaluation_dataset": {
+      "items": [
+        {
+          "ref": "metrics_province",
+          "appendMode": false
+        }
+      ]
+    },
+    "evaluation_forecasts_dataset": {
+      "items": [
+        {
+          "ref": "eval_province",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655154513042
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655154513043
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

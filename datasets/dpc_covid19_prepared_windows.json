@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654702365984
+    "lastModifiedOn": 1655140828663
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,7 +88,7 @@
     "columns": [
       {
         "name": "data",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "stato",
@@ -181,6 +181,14 @@
       {
         "name": "tamponi_test_antigenico_rapido",
         "type": "double"
+      },
+      {
+        "name": "is_holiday",
+        "type": "string"
+      },
+      {
+        "name": "is_weekend",
+        "type": "boolean"
       },
       {
         "name": "ntile10",

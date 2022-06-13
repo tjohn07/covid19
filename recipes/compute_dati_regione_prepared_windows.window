@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "data",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -35,9 +38,11 @@
       "firstLastNotNull": false,
       "column": "stato",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +63,11 @@
       "firstLastNotNull": false,
       "column": "codice_regione",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -81,9 +88,11 @@
       "firstLastNotNull": false,
       "column": "denominazione_regione",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -104,9 +113,11 @@
       "firstLastNotNull": false,
       "column": "lat",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -127,9 +138,11 @@
       "firstLastNotNull": false,
       "column": "long",
       "count": false,
+      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -150,9 +163,11 @@
       "firstLastNotNull": false,
       "column": "ricoverati_con_sintomi",
       "count": false,
+      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -173,9 +188,11 @@
       "firstLastNotNull": false,
       "column": "terapia_intensiva",
       "count": false,
+      "$idx": 7,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -196,9 +213,11 @@
       "firstLastNotNull": false,
       "column": "totale_ospedalizzati",
       "count": false,
+      "$idx": 8,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -219,9 +238,11 @@
       "firstLastNotNull": false,
       "column": "isolamento_domiciliare",
       "count": false,
+      "$idx": 9,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -242,17 +263,20 @@
       "firstLastNotNull": false,
       "column": "totale_positivi",
       "count": false,
+      "$idx": 10,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -265,9 +289,11 @@
       "firstLastNotNull": false,
       "column": "variazione_totale_positivi",
       "count": false,
+      "$idx": 11,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -288,9 +314,11 @@
       "firstLastNotNull": false,
       "column": "nuovi_positivi",
       "count": false,
+      "$idx": 12,
       "lagValues": "1",
-      "sum": false,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -299,6 +327,7 @@
       "avg": false,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -311,9 +340,11 @@
       "firstLastNotNull": false,
       "column": "dimessi_guariti",
       "count": false,
+      "$idx": 13,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -334,9 +365,11 @@
       "firstLastNotNull": false,
       "column": "deceduti",
       "count": false,
+      "$idx": 14,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -357,9 +390,11 @@
       "firstLastNotNull": false,
       "column": "casi_da_sospetto_diagnostico",
       "count": false,
+      "$idx": 15,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -380,9 +415,11 @@
       "firstLastNotNull": false,
       "column": "casi_da_screening",
       "count": false,
+      "$idx": 16,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -403,9 +440,11 @@
       "firstLastNotNull": false,
       "column": "totale_casi",
       "count": false,
+      "$idx": 17,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -426,9 +465,11 @@
       "firstLastNotNull": false,
       "column": "tamponi",
       "count": false,
+      "$idx": 18,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -449,9 +490,11 @@
       "firstLastNotNull": false,
       "column": "casi_testati",
       "count": false,
+      "$idx": 19,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -472,9 +515,11 @@
       "firstLastNotNull": false,
       "column": "ingressi_terapia_intensiva",
       "count": false,
+      "$idx": 20,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -495,9 +540,11 @@
       "firstLastNotNull": false,
       "column": "note_test",
       "count": false,
+      "$idx": 21,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -518,9 +565,11 @@
       "firstLastNotNull": false,
       "column": "note_casi",
       "count": false,
+      "$idx": 22,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -541,9 +590,11 @@
       "firstLastNotNull": false,
       "column": "totale_positivi_test_molecolare",
       "count": false,
+      "$idx": 23,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -564,9 +615,11 @@
       "firstLastNotNull": false,
       "column": "totale_positivi_test_antigenico_rapido",
       "count": false,
+      "$idx": 24,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -587,9 +640,11 @@
       "firstLastNotNull": false,
       "column": "tamponi_test_molecolare",
       "count": false,
+      "$idx": 25,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -610,9 +665,11 @@
       "firstLastNotNull": false,
       "column": "tamponi_test_antigenico_rapido",
       "count": false,
+      "$idx": 26,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -633,9 +690,11 @@
       "firstLastNotNull": false,
       "column": "geopoint",
       "count": false,
+      "$idx": 27,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -653,20 +712,156 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0.0,
-      "enablePartitioning": false,
-      "enableOrdering": false,
-      "precedingRows": 0,
-      "limitFollowing": false,
-      "orders": [],
-      "limitPreceding": false,
-      "followingRows": 0,
-      "windowLowerBound": 0.0,
-      "enableLimits": false
+      "windowLimitMode": "ROWS",
+      "windowUpperBound": 0,
+      "enablePartitioning": true,
+      "enableOrdering": true,
+      "precedingRows": 2,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "denominazione_regione",
+          "desc": false
+        }
+      ],
+      "limitPreceding": true,
+      "followingRows": 2,
+      "windowLowerBound": 0,
+      "enableLimits": true,
+      "partitioningColumns": [
+        "data"
+      ]
     }
   ],
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "data",
+            "type": "string"
+          },
+          {
+            "name": "stato",
+            "type": "string"
+          },
+          {
+            "name": "codice_regione",
+            "type": "bigint"
+          },
+          {
+            "name": "denominazione_regione",
+            "type": "string"
+          },
+          {
+            "name": "lat",
+            "type": "double"
+          },
+          {
+            "name": "long",
+            "type": "double"
+          },
+          {
+            "name": "ricoverati_con_sintomi",
+            "type": "bigint"
+          },
+          {
+            "name": "terapia_intensiva",
+            "type": "bigint"
+          },
+          {
+            "name": "totale_ospedalizzati",
+            "type": "bigint"
+          },
+          {
+            "name": "isolamento_domiciliare",
+            "type": "bigint"
+          },
+          {
+            "name": "totale_positivi",
+            "type": "bigint"
+          },
+          {
+            "name": "variazione_totale_positivi",
+            "type": "bigint"
+          },
+          {
+            "name": "nuovi_positivi",
+            "type": "bigint"
+          },
+          {
+            "name": "dimessi_guariti",
+            "type": "bigint"
+          },
+          {
+            "name": "deceduti",
+            "type": "bigint"
+          },
+          {
+            "name": "casi_da_sospetto_diagnostico",
+            "type": "double"
+          },
+          {
+            "name": "casi_da_screening",
+            "type": "double"
+          },
+          {
+            "name": "totale_casi",
+            "type": "bigint"
+          },
+          {
+            "name": "tamponi",
+            "type": "bigint"
+          },
+          {
+            "name": "casi_testati",
+            "type": "double"
+          },
+          {
+            "name": "ingressi_terapia_intensiva",
+            "type": "double"
+          },
+          {
+            "name": "note_test",
+            "type": "string"
+          },
+          {
+            "name": "note_casi",
+            "type": "string"
+          },
+          {
+            "name": "totale_positivi_test_molecolare",
+            "type": "double"
+          },
+          {
+            "name": "totale_positivi_test_antigenico_rapido",
+            "type": "double"
+          },
+          {
+            "name": "tamponi_test_molecolare",
+            "type": "double"
+          },
+          {
+            "name": "tamponi_test_antigenico_rapido",
+            "type": "double"
+          },
+          {
+            "name": "geopoint",
+            "type": "string"
+          },
+          {
+            "name": "totale_positivi_avg",
+            "type": "double"
+          },
+          {
+            "name": "nuovi_positivi_sum",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
@@ -708,5 +903,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
 }

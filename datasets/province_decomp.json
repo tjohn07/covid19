@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655142367710
+    "lastModifiedOn": 1655142877288
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,69 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "codice_provincia",
+        "type": "bigint"
+      },
+      {
+        "name": "codice_regione",
+        "type": "bigint"
+      },
+      {
+        "name": "data",
+        "type": "date"
+      },
+      {
+        "name": "lat",
+        "type": "double"
+      },
+      {
+        "name": "long",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi",
+        "type": "double"
+      },
+      {
+        "name": "stato",
+        "type": "string"
+      },
+      {
+        "name": "denominazione_regione",
+        "type": "string"
+      },
+      {
+        "name": "denominazione_provincia",
+        "type": "string"
+      },
+      {
+        "name": "geopoint",
+        "type": "string"
+      },
+      {
+        "name": "is_holiday",
+        "type": "string"
+      },
+      {
+        "name": "is_weekend",
+        "type": "string"
+      },
+      {
+        "name": "totale_casi_trend",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi_residuals",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {

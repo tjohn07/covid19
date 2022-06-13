@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654552398501
+    "lastModifiedOn": 1655141127698
   },
   "creationTag": {
     "versionNumber": 0,
@@ -125,6 +125,14 @@
       {
         "name": "geopoint",
         "type": "string"
+      },
+      {
+        "name": "is_holiday",
+        "type": "boolean"
+      },
+      {
+        "name": "is_weekend",
+        "type": "boolean"
       }
     ],
     "userModified": true

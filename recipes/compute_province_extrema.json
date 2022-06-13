@@ -3,7 +3,24 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "advanced_activated": true,
+      "extrema_type": "max",
+      "causal_window": false,
+      "window_type": "none",
+      "gaussian_std": 1,
+      "window_width": 1,
+      "window_unit": "days",
+      "closed_option": "left",
+      "aggregation_types": [
+        "average"
+      ],
+      "groupby_columns": [
+        "codice_provincia"
+      ],
+      "datetime_column": "data",
+      "extrema_column": "totale_casi"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +54,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655143024348
+    "lastModifiedOn": 1655143050227
   },
   "creationTag": {
     "versionNumber": 0,

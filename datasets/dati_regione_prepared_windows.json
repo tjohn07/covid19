@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655134512608
+    "lastModifiedOn": 1655134577383
   },
   "creationTag": {
     "versionNumber": 0,
@@ -197,6 +197,14 @@
       {
         "name": "geopoint",
         "type": "string"
+      },
+      {
+        "name": "totale_positivi_avg",
+        "type": "double"
+      },
+      {
+        "name": "nuovi_positivi_sum",
+        "type": "bigint"
       }
     ],
     "userModified": true

@@ -720,7 +720,7 @@
       "limitFollowing": true,
       "orders": [
         {
-          "column": "denominazione_regione",
+          "column": "data",
           "desc": false
         }
       ],
@@ -729,7 +729,7 @@
       "windowLowerBound": 0,
       "enableLimits": true,
       "partitioningColumns": [
-        "data"
+        "denominazione_regione"
       ]
     }
   ],

@@ -17,7 +17,7 @@
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "date",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -605,6 +605,46 @@
       "value": true,
       "leadDiff": false,
       "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "column": "is_holiday",
+      "count": false,
+      "$idx": 24,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "$selected": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "column": "is_weekend",
+      "count": false,
+      "$idx": 25,
+      "sum": false,
+      "concat": false,
+      "type": "boolean",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "$selected": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
     }
   ],
   "legacyUnboundedWindowStreamBehavior": false,
@@ -635,7 +675,7 @@
         "columns": [
           {
             "name": "data",
-            "type": "string"
+            "type": "date"
           },
           {
             "name": "stato",
@@ -728,6 +768,14 @@
           {
             "name": "tamponi_test_antigenico_rapido",
             "type": "double"
+          },
+          {
+            "name": "is_holiday",
+            "type": "string"
+          },
+          {
+            "name": "is_weekend",
+            "type": "boolean"
           },
           {
             "name": "ntile10",

@@ -3,7 +3,34 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "frequency_unit": "D",
+      "frequency_end_of_week": "SUN",
+      "frequency_step_hours": 1,
+      "frequency_step_minutes": 1,
+      "season_length_min": 60,
+      "season_length_H": 24,
+      "season_length_D": 7,
+      "season_length_B": 5,
+      "season_length_W": 52,
+      "season_length_M": 12,
+      "season_length_3M": 4,
+      "season_length_6M": 2,
+      "season_length_12M": 4,
+      "long_format": true,
+      "decomposition_model": "multiplicative",
+      "expert": false,
+      "seasonal_stl": 7,
+      "robust_stl": false,
+      "additional_parameters_STL": {},
+      "target_columns": [
+        "totale_casi"
+      ],
+      "timeseries_identifiers": [
+        "codice_provincia"
+      ],
+      "time_column": "data"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +64,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655142369737
+    "lastModifiedOn": 1655142421260
   },
   "creationTag": {
     "versionNumber": 0,

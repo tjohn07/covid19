@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655142877288
+    "lastModifiedOn": 1655142879849
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,63 +88,78 @@
     "columns": [
       {
         "name": "codice_provincia",
-        "type": "bigint"
+        "type": "bigint",
+        "comment": ""
       },
       {
         "name": "codice_regione",
-        "type": "bigint"
+        "type": "bigint",
+        "comment": ""
       },
       {
         "name": "data",
-        "type": "date"
+        "type": "date",
+        "comment": ""
       },
       {
         "name": "lat",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "long",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "totale_casi",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "stato",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "denominazione_regione",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "denominazione_provincia",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "geopoint",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "is_holiday",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "is_weekend",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "totale_casi_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "totale_casi_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "totale_casi_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       }
     ],
     "userModified": false

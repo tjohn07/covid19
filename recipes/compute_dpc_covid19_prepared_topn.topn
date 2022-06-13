@@ -30,7 +30,9 @@
     "totale_positivi_test_molecolare",
     "totale_positivi_test_antigenico_rapido",
     "tamponi_test_molecolare",
-    "tamponi_test_antigenico_rapido"
+    "tamponi_test_antigenico_rapido",
+    "is_holiday",
+    "is_weekend"
   ],
   "lastRows": 1,
   "duplicateCount": true,

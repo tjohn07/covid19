@@ -102,28 +102,8 @@
       "table": 0
     },
     {
-      "name": "codice_provincia_avg",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "codice_provincia_sum",
-      "type": "double",
-      "table": 0
-    },
-    {
       "name": "codice_regione",
       "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "codice_regione_avg",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "codice_regione_sum",
-      "type": "double",
       "table": 0
     },
     {
@@ -137,43 +117,13 @@
       "table": 0
     },
     {
-      "name": "lat_avg",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "lat_sum",
-      "type": "double",
-      "table": 0
-    },
-    {
       "name": "long",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "long_avg",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "long_sum",
       "type": "double",
       "table": 0
     },
     {
       "name": "totale_casi",
       "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "totale_casi_avg",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "totale_casi_sum",
-      "type": "double",
       "table": 0
     },
     {
@@ -274,24 +224,8 @@
             "type": "bigint"
           },
           {
-            "name": "codice_provincia_avg",
-            "type": "double"
-          },
-          {
-            "name": "codice_provincia_sum",
-            "type": "double"
-          },
-          {
             "name": "codice_regione",
             "type": "bigint"
-          },
-          {
-            "name": "codice_regione_avg",
-            "type": "double"
-          },
-          {
-            "name": "codice_regione_sum",
-            "type": "double"
           },
           {
             "name": "data",
@@ -302,36 +236,12 @@
             "type": "double"
           },
           {
-            "name": "lat_avg",
-            "type": "double"
-          },
-          {
-            "name": "lat_sum",
-            "type": "double"
-          },
-          {
             "name": "long",
-            "type": "double"
-          },
-          {
-            "name": "long_avg",
-            "type": "double"
-          },
-          {
-            "name": "long_sum",
             "type": "double"
           },
           {
             "name": "totale_casi",
             "type": "bigint"
-          },
-          {
-            "name": "totale_casi_avg",
-            "type": "double"
-          },
-          {
-            "name": "totale_casi_sum",
-            "type": "double"
           },
           {
             "name": "stato",

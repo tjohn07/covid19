@@ -169,7 +169,7 @@
       "limitFollowing": true,
       "orders": [
         {
-          "column": "denominazione_provincia",
+          "column": "data",
           "desc": false
         }
       ],
@@ -178,7 +178,7 @@
       "windowLowerBound": 0,
       "enableLimits": true,
       "partitioningColumns": [
-        "data"
+        "denominazione_provincia"
       ]
     }
   ],

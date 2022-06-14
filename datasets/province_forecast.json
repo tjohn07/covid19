@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655230199111
+    "lastModifiedOn": 1655230225886
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,49 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "data",
+        "type": "date"
+      },
+      {
+        "name": "totale_casi",
+        "type": "double"
+      },
+      {
+        "name": "denominazione_provincia",
+        "type": "string"
+      },
+      {
+        "name": "denominazione_regione",
+        "type": "string"
+      },
+      {
+        "name": "forecast_lower_totale_casi",
+        "type": "float"
+      },
+      {
+        "name": "forecast_totale_casi",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_totale_casi",
+        "type": "float"
+      },
+      {
+        "name": "model",
+        "type": "string"
+      },
+      {
+        "name": "row_origin",
+        "type": "string"
+      },
+      {
+        "name": "training_session",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {

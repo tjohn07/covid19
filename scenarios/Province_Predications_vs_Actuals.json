@@ -5,18 +5,18 @@
   "name": "Province Predications vs Actuals",
   "active": true,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655231784034
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655231785340
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655232115560
   },
   "checklists": {
     "checklists": []
@@ -65,6 +65,11 @@
         "maxRetriesOnFail": 0,
         "params": {
           "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "dati_province_prepared",
+              "partitionsSpec": ""
+            },
             {
               "type": "DATASET",
               "itemId": "province_forecast_joined",

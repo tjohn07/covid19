@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655236996742
+    "lastModifiedOn": 1655237091784
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,37 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "data",
+        "type": "date"
+      },
+      {
+        "name": "denominazione_provincia",
+        "type": "string"
+      },
+      {
+        "name": "denominazione_regione",
+        "type": "string"
+      },
+      {
+        "name": "totale_casi",
+        "type": "bigint"
+      },
+      {
+        "name": "totale_casi_avg",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi_max",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi_min",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {

@@ -68,18 +68,6 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "GeoPointCreator",
-      "params": {
-        "out_column": "geopoint",
-        "lat_column": "lat",
-        "lon_column": "long"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
@@ -95,7 +83,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "jython-processor-holidays-holidays",
@@ -108,6 +96,24 @@
         },
         "sourceColumnsList": [],
         "vectorSize": 32
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "long",
+          "lat",
+          "codice_provincia",
+          "codice_regione",
+          "stato"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }

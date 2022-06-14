@@ -33,6 +33,14 @@
     {
       "objectId": "compute_province_forecast",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_province_forecast_joined_by_totale_casi_actual_vs_prediction",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "province_forecast_joined_by_totale_casi_actual_vs_prediction",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

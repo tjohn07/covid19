@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655230963318
+    "lastModifiedOn": 1655231002744
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,10 +97,6 @@
       {
         "name": "denominazione_provincia",
         "type": "string"
-      },
-      {
-        "name": "totale_casi",
-        "type": "bigint"
       },
       {
         "name": "is_holiday",

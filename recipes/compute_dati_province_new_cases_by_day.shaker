@@ -26,8 +26,40 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "totale_casi"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "totale_casi_lag_diff"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -53,7 +85,15 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "denominazione_provincia": 188,
+    "is_holiday": 100,
+    "denominazione_regione": 173,
+    "totale_casi": 100,
+    "data": 183,
+    "totale_casi_lag_diff": 165,
+    "is_weekend": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

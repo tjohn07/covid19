@@ -1,7 +1,40 @@
 {
   "name": "Province Monitoring",
   "color": "#0F786B",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_dpc_covid19_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dati_province",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dpc-covid19-ita-andamento-nazionale_prepared_1_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dati_province_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "province_forecast",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_province_forecast_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "province_forecast_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_province_forecast",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

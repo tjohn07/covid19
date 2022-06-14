@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655141127698
+    "lastModifiedOn": 1655228991153
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,40 +91,16 @@
         "type": "date"
       },
       {
-        "name": "stato",
-        "type": "string"
-      },
-      {
-        "name": "codice_regione",
-        "type": "bigint"
-      },
-      {
         "name": "denominazione_regione",
         "type": "string"
-      },
-      {
-        "name": "codice_provincia",
-        "type": "bigint"
       },
       {
         "name": "denominazione_provincia",
         "type": "string"
       },
       {
-        "name": "lat",
-        "type": "double"
-      },
-      {
-        "name": "long",
-        "type": "double"
-      },
-      {
         "name": "totale_casi",
         "type": "bigint"
-      },
-      {
-        "name": "geopoint",
-        "type": "string"
       },
       {
         "name": "is_holiday",

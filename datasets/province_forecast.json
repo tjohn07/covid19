@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655230228445
+    "lastModifiedOn": 1655230394579
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,7 +92,8 @@
       },
       {
         "name": "totale_casi",
-        "type": "double"
+        "type": "double",
+        "meaning": "LongMeaning"
       },
       {
         "name": "denominazione_provincia",
@@ -133,7 +134,7 @@
         "comment": "Timestamp of training session"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {

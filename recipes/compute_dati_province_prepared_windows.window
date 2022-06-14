@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "data",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "date",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -35,9 +38,11 @@
       "firstLastNotNull": false,
       "column": "denominazione_regione",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +63,11 @@
       "firstLastNotNull": false,
       "column": "denominazione_provincia",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -76,14 +83,16 @@
     },
     {
       "last": false,
-      "lagDiff": false,
+      "lagDiff": true,
       "max": false,
       "firstLastNotNull": false,
       "column": "totale_casi",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -92,6 +101,7 @@
       "avg": false,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -104,9 +114,11 @@
       "firstLastNotNull": false,
       "column": "is_holiday",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "boolean",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -127,9 +139,11 @@
       "firstLastNotNull": false,
       "column": "is_weekend",
       "count": false,
+      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "boolean",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -147,20 +161,64 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0.0,
-      "enablePartitioning": false,
-      "enableOrdering": false,
-      "precedingRows": 0,
-      "limitFollowing": false,
-      "orders": [],
-      "limitPreceding": false,
+      "windowLimitMode": "ROWS",
+      "windowUpperBound": 0,
+      "enablePartitioning": true,
+      "enableOrdering": true,
+      "precedingRows": 1,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "denominazione_provincia",
+          "desc": false
+        }
+      ],
+      "limitPreceding": true,
       "followingRows": 0,
-      "windowLowerBound": 0.0,
-      "enableLimits": false
+      "windowLowerBound": 0,
+      "enableLimits": true,
+      "partitioningColumns": [
+        "data"
+      ]
     }
   ],
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "data",
+            "type": "date"
+          },
+          {
+            "name": "denominazione_regione",
+            "type": "string"
+          },
+          {
+            "name": "denominazione_provincia",
+            "type": "string"
+          },
+          {
+            "name": "totale_casi",
+            "type": "bigint"
+          },
+          {
+            "name": "is_holiday",
+            "type": "boolean"
+          },
+          {
+            "name": "is_weekend",
+            "type": "boolean"
+          },
+          {
+            "name": "totale_casi_lag_diff",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
@@ -202,5 +260,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
 }

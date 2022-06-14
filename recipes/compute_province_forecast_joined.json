@@ -17,7 +17,7 @@
           "deps": []
         },
         {
-          "ref": "dati_province",
+          "ref": "dati_province_prepared",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655231268305
+    "lastModifiedOn": 1655231549538
   },
   "creationTag": {
     "versionNumber": 0,

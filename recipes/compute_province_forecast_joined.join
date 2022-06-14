@@ -4,94 +4,112 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {},
+        "maxMatches": 1,
+        "type": "KEEP_LARGEST",
+        "enabled": false
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "denominazione_provincia",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "denominazione_provincia",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "denominazione_regione",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "denominazione_regione",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "data",
+            "table": 0
+          },
+          "column2": {
+            "name": "data",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "data",
-      "table": 0
-    },
-    {
-      "name": "totale_casi",
+      "type": "date",
       "table": 0
     },
     {
       "name": "denominazione_provincia",
+      "type": "string",
       "table": 0
     },
     {
       "name": "denominazione_regione",
+      "type": "string",
       "table": 0
     },
     {
       "name": "forecast_lower_totale_casi",
+      "type": "float",
       "table": 0
     },
     {
       "name": "forecast_totale_casi",
+      "type": "float",
       "table": 0
     },
     {
       "name": "forecast_upper_totale_casi",
+      "type": "float",
       "table": 0
     },
     {
       "name": "model",
+      "type": "string",
       "table": 0
     },
     {
       "name": "row_origin",
+      "type": "string",
       "table": 0
     },
     {
       "name": "training_session",
+      "type": "string",
       "table": 0
     },
     {
-      "name": "index",
-      "table": 1
-    },
-    {
-      "name": "stato",
-      "table": 1
-    },
-    {
-      "name": "codice_regione",
-      "table": 1
-    },
-    {
-      "name": "codice_provincia",
-      "table": 1
-    },
-    {
-      "name": "sigla_provincia",
-      "table": 1
-    },
-    {
-      "name": "lat",
-      "table": 1
-    },
-    {
-      "name": "long",
-      "table": 1
-    },
-    {
-      "name": "note",
-      "table": 1
-    },
-    {
-      "name": "codice_nuts_1",
-      "table": 1
-    },
-    {
-      "name": "codice_nuts_2",
-      "table": 1
-    },
-    {
-      "name": "codice_nuts_3",
+      "name": "totale_casi",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -142,15 +160,75 @@
       "computedColumns": []
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
-      "originLabel": "dati_province",
-      "index": 1,
-      "computedColumns": []
+      "index": 1
     }
   ],
+  "computedColumns": [
+    {
+      "mode": "GREL",
+      "name": "totale_casi_actual_vs_prediction",
+      "expr": "forecast_totale_casi - totale_casi",
+      "type": "double"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "data",
+            "type": "date"
+          },
+          {
+            "name": "denominazione_provincia",
+            "type": "string"
+          },
+          {
+            "name": "denominazione_regione",
+            "type": "string"
+          },
+          {
+            "name": "forecast_lower_totale_casi",
+            "comment": "Lower bound of the 95% forecasts confidence interval.",
+            "type": "float"
+          },
+          {
+            "name": "forecast_totale_casi",
+            "comment": "Median of probabilistic forecasts",
+            "type": "float"
+          },
+          {
+            "name": "forecast_upper_totale_casi",
+            "comment": "Upper bound of the 95% forecasts confidence interval.",
+            "type": "float"
+          },
+          {
+            "name": "model",
+            "comment": "Model name",
+            "type": "string"
+          },
+          {
+            "name": "row_origin",
+            "comment": "Row origin",
+            "type": "string"
+          },
+          {
+            "name": "training_session",
+            "comment": "Timestamp of training session",
+            "type": "string"
+          },
+          {
+            "name": "totale_casi",
+            "type": "bigint"
+          },
+          {
+            "name": "totale_casi_actual_vs_prediction",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }

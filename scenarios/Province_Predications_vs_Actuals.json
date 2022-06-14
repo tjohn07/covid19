@@ -3,7 +3,7 @@
   "id": "Province_Predications_vs_Actuals",
   "type": "step_based",
   "name": "Province Predications vs Actuals",
-  "active": false,
+  "active": true,
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -12,11 +12,11 @@
     "lastModifiedOn": 1655231643176
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655231643176
+    "lastModifiedOn": 1655231784034
   },
   "checklists": {
     "checklists": []
@@ -27,10 +27,56 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "nafJFBCu",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Daily",
+        "startingFrom": "2022-06-14T18:34:00.000Z",
+        "daysOfWeek": [
+          "Tuesday"
+        ],
+        "minute": 0,
+        "hour": 8,
+        "timezone": "SERVER"
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_province_forecast_joined",
+        "type": "build_flowitem",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "province_forecast_joined",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}

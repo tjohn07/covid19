@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655231268280
+    "lastModifiedOn": 1655231549435
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,10 +89,6 @@
       {
         "name": "data",
         "type": "date"
-      },
-      {
-        "name": "totale_casi",
-        "type": "double"
       },
       {
         "name": "denominazione_provincia",
@@ -133,48 +129,12 @@
         "comment": "Timestamp of training session"
       },
       {
-        "name": "index",
+        "name": "totale_casi",
         "type": "bigint"
       },
       {
-        "name": "stato",
-        "type": "string"
-      },
-      {
-        "name": "codice_regione",
-        "type": "bigint"
-      },
-      {
-        "name": "codice_provincia",
-        "type": "bigint"
-      },
-      {
-        "name": "sigla_provincia",
-        "type": "string"
-      },
-      {
-        "name": "lat",
+        "name": "totale_casi_actual_vs_prediction",
         "type": "double"
-      },
-      {
-        "name": "long",
-        "type": "double"
-      },
-      {
-        "name": "note",
-        "type": "string"
-      },
-      {
-        "name": "codice_nuts_1",
-        "type": "string"
-      },
-      {
-        "name": "codice_nuts_2",
-        "type": "string"
-      },
-      {
-        "name": "codice_nuts_3",
-        "type": "string"
       }
     ],
     "userModified": true

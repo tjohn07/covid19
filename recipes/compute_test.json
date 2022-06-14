@@ -3,7 +3,26 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "advanced_activated": true,
+      "causal_window": true,
+      "window_type": "none",
+      "gaussian_std": 1,
+      "window_width": 21,
+      "window_unit": "days",
+      "closed_option": "left",
+      "aggregation_types": [
+        "retrieve",
+        "average",
+        "max",
+        "min"
+      ],
+      "groupby_columns": [
+        "denominazione_regione",
+        "denominazione_provincia"
+      ],
+      "datetime_column": "data"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +56,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655236997890
+    "lastModifiedOn": 1655237075887
   },
   "creationTag": {
     "versionNumber": 0,

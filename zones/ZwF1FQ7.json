@@ -33,6 +33,14 @@
     {
       "objectId": "compute_province_forecast",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "split_province_forecast_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "test_split_province",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655229905088
+    "lastModifiedOn": 1655229994978
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,69 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "target_column",
+        "type": "string"
+      },
+      {
+        "name": "denominazione_regione",
+        "type": "string"
+      },
+      {
+        "name": "denominazione_provincia",
+        "type": "string"
+      },
+      {
+        "name": "model",
+        "type": "string"
+      },
+      {
+        "name": "mse",
+        "type": "double"
+      },
+      {
+        "name": "mase",
+        "type": "double"
+      },
+      {
+        "name": "mape",
+        "type": "double"
+      },
+      {
+        "name": "smape",
+        "type": "double"
+      },
+      {
+        "name": "msis",
+        "type": "double"
+      },
+      {
+        "name": "rmse",
+        "type": "double"
+      },
+      {
+        "name": "nd",
+        "type": "double"
+      },
+      {
+        "name": "mean_wquantileloss",
+        "type": "double"
+      },
+      {
+        "name": "run_time",
+        "type": "double"
+      },
+      {
+        "name": "model_params",
+        "type": "string"
+      },
+      {
+        "name": "training_session",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {

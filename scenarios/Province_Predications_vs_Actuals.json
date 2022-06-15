@@ -5,18 +5,18 @@
   "name": "Province Predications vs Actuals",
   "active": true,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655325226694
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655325228816
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655325294150
   },
   "checklists": {
     "checklists": []
@@ -71,7 +71,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_MISSING_ONLY_BUILD",
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }

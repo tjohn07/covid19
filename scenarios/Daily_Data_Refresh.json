@@ -5,18 +5,18 @@
   "name": "Daily Data Refresh",
   "active": true,
   "creationTag": {
-    "versionNumber": 6,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655326187232
-  },
-  "versionTag": {
     "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655326371132
+  },
+  "versionTag": {
+    "versionNumber": 8,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655326401886
   },
   "checklists": {
     "checklists": []

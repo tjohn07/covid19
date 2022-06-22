@@ -1,7 +1,40 @@
 {
   "name": "decile_bin",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "test_variable_set",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_test_variable_set",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dpc_covid19_prepared_windows_by_ntile10",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dpc_covid19_prepared_windows_by_ntile10",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dpc_covid19_prepared_windows",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dpc_covid19_prepared_windows",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dpc_covid19_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dpc-covid19-ita-andamento-nazionale_prepared_1",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

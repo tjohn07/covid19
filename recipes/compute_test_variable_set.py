@@ -3,7 +3,7 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
-from dataiku.scenario import Trigger
+# from dataiku.scenario import Trigger
 
 
 # Accessing the DSS Global/Project Variables
@@ -11,21 +11,18 @@ proj = dataiku.Project()
 variables = proj.get_variables()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# declare the datasets being used from the flow
 ntile10_dataset = dataiku.Dataset("dpc_covid19_prepared_windows_by_ntile10")
 dpc_dataset = dataiku.Dataset("dpc_covid19_prepared")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+#  declare datasets as dataframes
 ntile10_df = ntile10_dataset.get_dataframe()
 dpc_df = dpc_dataset.get_dataframe()
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-ntile10_df.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# dpc_df.head()
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-#Set variables for ntile ranges from ntile_range_dataset in order to compare to full dataset
+#Set project variables for ntile ranges from ntile_range_dataset in order to compare to full dataset
 for num in range(1,11):
     variables["standard"][f'n{num}'] = range(int(ntile10_df['nuovi_positivi_min'][ntile10_df['ntile10'] == num]), int(ntile10_df['nuovi_positivi_max'][ntile10_df['ntile10'] == num]+1))
 

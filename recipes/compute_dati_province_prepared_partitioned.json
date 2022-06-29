@@ -66,7 +66,7 @@
     "main": {
       "items": [
         {
-          "ref": "dati_province_prepared_partitioned",
+          "ref": "province_partitions",
           "appendMode": false
         }
       ]
@@ -74,11 +74,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656546465301
+    "lastModifiedOn": 1656546701052
   },
   "creationTag": {
     "versionNumber": 0,

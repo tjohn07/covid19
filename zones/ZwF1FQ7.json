@@ -49,6 +49,10 @@
     {
       "objectId": "dati_province_prepared_partitioned",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "province_partitions",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656546697048
+    "lastModifiedOn": 1656546700384
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,32 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "data",
+        "type": "date"
+      },
+      {
+        "name": "denominazione_regione",
+        "type": "string"
+      },
+      {
+        "name": "denominazione_provincia",
+        "type": "string"
+      },
+      {
+        "name": "totale_casi",
+        "type": "bigint"
+      },
+      {
+        "name": "is_holiday",
+        "type": "boolean"
+      },
+      {
+        "name": "is_weekend",
+        "type": "boolean"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],

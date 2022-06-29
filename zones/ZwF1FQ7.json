@@ -41,6 +41,14 @@
     {
       "objectId": "test_split_province",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dati_province_prepared_partitioned",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dati_province_prepared_partitioned",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

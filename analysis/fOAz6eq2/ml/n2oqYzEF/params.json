@@ -1,7 +1,7 @@
 {
   "guessPolicy": "DEFAULT",
   "partitionedModel": {
-    "enabled": false,
+    "enabled": true,
     "ssdSelection": {
       "useMemTable": false,
       "filter": {

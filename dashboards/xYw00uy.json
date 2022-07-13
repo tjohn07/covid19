@@ -8,29 +8,6 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 0,
-              "width": 5,
-              "height": 5
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": false,
-              "showTooltips": true,
-              "autoPlayAnimation": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "X4Ytg5f",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
               "left": 5,
               "width": 7,
               "height": 5
@@ -60,11 +37,11 @@
   "name": "Italy COVID-19\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657749195401
+    "lastModifiedOn": 1657749200672
   },
   "creationTag": {
     "versionNumber": 0,

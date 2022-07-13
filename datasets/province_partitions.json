@@ -33,11 +33,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656548415295
+    "lastModifiedOn": 1657749251899
   },
   "creationTag": {
     "versionNumber": 0,
@@ -122,6 +122,64 @@
           "level": 1
         },
         "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": [
+            {
+              "column": "data",
+              "aggregated": "MIN"
+            },
+            {
+              "column": "data",
+              "aggregated": "MAX"
+            }
+          ]
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": [],
+          "numberTopValues": 10
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
       }
     ],
     "engineConfig": {
@@ -165,6 +223,7 @@
       "python": {}
     },
     "displayedState": {
+      "partition": "ALL",
       "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
@@ -176,6 +235,7 @@
     "runOnBuild": false,
     "checks": [],
     "displayedState": {
+      "partition": "ALL",
       "checks": []
     }
   },

@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657749780297
+    "lastModifiedOn": 1657749791356
   },
   "creationTag": {
     "versionNumber": 0,
@@ -278,7 +278,10 @@
         "basic:COUNT_COLUMNS",
         "basic:COUNT_FILES",
         "basic:SIZE",
-        "records:COUNT_RECORDS"
+        "records:COUNT_RECORDS",
+        "col_stats:MIN:data",
+        "col_stats:MAX:data",
+        "partitioning:COUNT_PARTITIONS"
       ]
     }
   },

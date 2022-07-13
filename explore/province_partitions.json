@@ -203,17 +203,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [
-          {
-            "filterType": "ALPHANUM_FACET",
-            "column": "denominazione_provincia",
-            "columnType": "ALPHANUM",
-            "isA": "filter",
-            "excludedValues": {},
-            "isAGlobalFilter": false,
-            "explicitExclude": false
-          }
-        ],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -274,6 +264,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {

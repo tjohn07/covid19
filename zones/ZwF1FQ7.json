@@ -61,6 +61,14 @@
     {
       "objectId": "mean_test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dati_province_prepared_count_test",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dati_province_prepared_count_test",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

@@ -53,6 +53,14 @@
     {
       "objectId": "province_partitions",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_mean_test",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "mean_test",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

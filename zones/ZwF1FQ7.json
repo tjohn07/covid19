@@ -69,6 +69,14 @@
     {
       "objectId": "compute_dati_province_prepared_count_test",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sql_date_test",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sql_date_test",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

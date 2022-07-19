@@ -26,8 +26,25 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateFormatter",
+      "params": {
+        "inCol": "data",
+        "format": "yyyy-MM-dd",
+        "timezone_id": "UTC",
+        "lang": "en_US"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -53,7 +70,14 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "denominazione_provincia": 188,
+    "is_holiday": 100,
+    "denominazione_regione": 173,
+    "totale_casi": 100,
+    "data": 183,
+    "is_weekend": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

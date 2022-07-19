@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658266786290
+    "lastModifiedOn": 1658266908868
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,7 +60,7 @@
     "columns": [
       {
         "name": "data",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "denominazione_regione",

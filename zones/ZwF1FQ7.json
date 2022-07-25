@@ -77,6 +77,14 @@
     {
       "objectId": "compute_sql_date_test",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dati_province_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dati_province_copy",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

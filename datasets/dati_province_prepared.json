@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657749736477
+    "lastModifiedOn": 1659021911359
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +89,18 @@
       {
         "name": "data",
         "type": "date"
+      },
+      {
+        "name": "month",
+        "type": "bigint"
+      },
+      {
+        "name": "day_of_month",
+        "type": "bigint"
+      },
+      {
+        "name": "START_OF_MONTH",
+        "type": "string"
       },
       {
         "name": "denominazione_regione",

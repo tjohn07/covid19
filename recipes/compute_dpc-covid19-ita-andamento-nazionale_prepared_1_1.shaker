@@ -136,7 +136,7 @@
       "disabled": false,
       "type": "FlagOnCustomFormula",
       "params": {
-        "expression": "if (day_of_month\u003d\u003d1, \u00271\u0027, \u00270\u0027)",
+        "expression": "if(day_of_month \u003d\u003d 1, 1, 0)",
         "action": "FLAG",
         "flagColumn": "START_OF_MONTH"
       },

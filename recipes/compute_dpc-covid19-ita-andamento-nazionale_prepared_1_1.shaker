@@ -116,6 +116,31 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "month",
+        "column": "data",
+        "timezone_id": "UTC",
+        "outDayColumn": "day_of_month"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FlagOnCustomFormula",
+      "params": {
+        "expression": "if (day_of_month\u003d\u003d1, \u00271\u0027, \u00270\u0027)",
+        "action": "FLAG",
+        "flagColumn": "START_OF_MONTH"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -153,6 +178,7 @@
     "casi_testati": 134,
     "ricoverati_con_sintomi": 180,
     "tamponi_test_molecolare": 188,
+    "day_of_month": 105,
     "long": 141,
     "sigla_provincia": 128,
     "deceduti": 100,
@@ -172,11 +198,13 @@
     "totale_casi": 100,
     "codice_nuts_2": 113,
     "codice_nuts_1": 113,
+    "START_OF_MONTH": 120,
     "codice_nuts_3": 113,
     "index": 100,
     "totale_positivi": 128,
     "geopoint": 274,
     "isolamento_domiciliare": 180,
+    "month": 100,
     "nuovi_positivi": 120,
     "codice_provincia": 135,
     "ingressi_terapia_intensiva": 210,

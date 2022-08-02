@@ -105,6 +105,10 @@
     {
       "objectId": "dati_province_copy_feature_agg",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "agg_test",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

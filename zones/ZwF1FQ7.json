@@ -87,10 +87,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_feature_factory_test",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "feature_factory_test",
       "objectType": "DATASET"
     },

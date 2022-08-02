@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462404925
+    "lastModifiedOn": 1659462406734
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,68 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "index",
+        "type": "bigint"
+      },
+      {
+        "name": "data",
+        "type": "string"
+      },
+      {
+        "name": "stato",
+        "type": "string"
+      },
+      {
+        "name": "codice_regione",
+        "type": "bigint"
+      },
+      {
+        "name": "denominazione_regione",
+        "type": "string"
+      },
+      {
+        "name": "codice_provincia",
+        "type": "bigint"
+      },
+      {
+        "name": "denominazione_provincia",
+        "type": "string"
+      },
+      {
+        "name": "sigla_provincia",
+        "type": "string"
+      },
+      {
+        "name": "lat",
+        "type": "double"
+      },
+      {
+        "name": "long",
+        "type": "double"
+      },
+      {
+        "name": "totale_casi",
+        "type": "bigint"
+      },
+      {
+        "name": "note",
+        "type": "string"
+      },
+      {
+        "name": "codice_nuts_1",
+        "type": "string"
+      },
+      {
+        "name": "codice_nuts_2",
+        "type": "string"
+      },
+      {
+        "name": "codice_nuts_3",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],

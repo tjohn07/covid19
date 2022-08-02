@@ -5,7 +5,7 @@
   "params": {
     "customConfig": {
       "time_reference_type": "fixed_timestamp",
-      "input_features_definition": "manual",
+      "input_features_definition": "auto",
       "use_temporal_window": true,
       "num_windows_per_type": 10,
       "whole_history_window_enabled": false,
@@ -71,11 +71,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462636998
+    "lastModifiedOn": 1659462667141
   },
   "creationTag": {
     "versionNumber": 0,

@@ -45,7 +45,7 @@
     "input_dataset": {
       "items": [
         {
-          "ref": "agg_test",
+          "ref": "agg_test_prepared",
           "deps": []
         }
       ]
@@ -71,11 +71,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462667141
+    "lastModifiedOn": 1659462800510
   },
   "creationTag": {
     "versionNumber": 0,

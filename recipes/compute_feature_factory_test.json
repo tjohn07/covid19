@@ -5,7 +5,7 @@
   "params": {
     "customConfig": {
       "time_reference_type": "fixed_timestamp",
-      "input_features_definition": "auto",
+      "input_features_definition": "manual",
       "use_temporal_window": true,
       "num_windows_per_type": 10,
       "whole_history_window_enabled": false,
@@ -23,8 +23,12 @@
         "codice_regione",
         "codice_provincia"
       ],
-      "numerical_columns": [],
-      "categorical_columns": [],
+      "numerical_columns": [
+        "totale_casi"
+      ],
+      "categorical_columns": [
+        "denominazione_provincia"
+      ],
       "timestamp_column": "data",
       "windows_widths_day": "1"
     },
@@ -76,11 +80,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462206494
+    "lastModifiedOn": 1659462293544
   },
   "creationTag": {
     "versionNumber": 0,

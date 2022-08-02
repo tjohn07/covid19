@@ -26,9 +26,7 @@
       "numerical_columns": [
         "totale_casi"
       ],
-      "categorical_columns": [
-        "denominazione_provincia"
-      ],
+      "categorical_columns": [],
       "timestamp_column": "data",
       "windows_widths_day": "1"
     },
@@ -73,11 +71,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462479261
+    "lastModifiedOn": 1659462636998
   },
   "creationTag": {
     "versionNumber": 0,

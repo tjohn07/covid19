@@ -26,8 +26,32 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "sigla_provincia",
+          "lat",
+          "long",
+          "note",
+          "codice_nuts_2",
+          "codice_nuts_1",
+          "codice_nuts_3"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -53,7 +77,23 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "denominazione_provincia": 188,
+    "note": 100,
+    "denominazione_regione": 173,
+    "totale_casi": 100,
+    "data": 148,
+    "codice_nuts_2": 113,
+    "codice_nuts_1": 113,
+    "codice_nuts_3": 113,
+    "index": 100,
+    "long": 141,
+    "sigla_provincia": 128,
+    "stato": 100,
+    "codice_provincia": 135,
+    "codice_regione": 120,
+    "lat": 134
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

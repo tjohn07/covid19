@@ -87,10 +87,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "feature_factory_test",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dati_province_copy_feature_agg",
       "objectType": "RECIPE"
     },

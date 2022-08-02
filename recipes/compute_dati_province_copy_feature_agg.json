@@ -66,7 +66,7 @@
     "main": {
       "items": [
         {
-          "ref": "dati_province_copy_feature_agg",
+          "ref": "agg_test",
           "appendMode": false
         }
       ]
@@ -74,11 +74,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462352678
+    "lastModifiedOn": 1659462407168
   },
   "creationTag": {
     "versionNumber": 0,

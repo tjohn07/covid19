@@ -20,7 +20,6 @@
       "manual_populations_dict_15": {},
       "brute_force_populations_dict": {},
       "aggregation_keys": [
-        "codice_regione",
         "codice_provincia"
       ],
       "numerical_columns": [
@@ -71,11 +70,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462870873
+    "lastModifiedOn": 1659462889730
   },
   "creationTag": {
     "versionNumber": 0,

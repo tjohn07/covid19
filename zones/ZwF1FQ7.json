@@ -109,6 +109,14 @@
     {
       "objectId": "agg_test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "agg_test_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_agg_test_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

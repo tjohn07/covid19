@@ -97,6 +97,14 @@
     {
       "objectId": "fHK4hJTK",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_dati_province_copy_feature_agg",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dati_province_copy_feature_agg",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

@@ -27,7 +27,6 @@
         "totale_casi"
       ],
       "categorical_columns": [
-        "denominazione_provincia",
         "denominazione_regione",
         "codice_provincia",
         "codice_regione",
@@ -78,11 +77,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659466600608
+    "lastModifiedOn": 1659466628912
   },
   "creationTag": {
     "versionNumber": 0,

@@ -85,6 +85,18 @@
     {
       "objectId": "dati_province_copy",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_feature_factory_test",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "feature_factory_test",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "fHK4hJTK",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],

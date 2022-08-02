@@ -105,6 +105,10 @@
     {
       "objectId": "compute_agg_test_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "feature_test",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

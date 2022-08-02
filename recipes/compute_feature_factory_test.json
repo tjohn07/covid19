@@ -43,8 +43,15 @@
     "input_dataset": {
       "items": [
         {
-          "ref": "dati_province",
-          "deps": []
+          "ref": "dati_province_copy",
+          "deps": [
+            {
+              "idim": "denominazione_regione",
+              "func": "all_available",
+              "params": {},
+              "expandVariables": false
+            }
+          ]
         }
       ]
     }
@@ -69,11 +76,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462071152
+    "lastModifiedOn": 1659462195853
   },
   "creationTag": {
     "versionNumber": 0,

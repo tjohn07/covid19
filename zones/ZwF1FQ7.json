@@ -113,6 +113,10 @@
     {
       "objectId": "rLeTSlkQ",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_feature_test",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

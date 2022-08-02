@@ -1,0 +1,66 @@
+{
+  "type": "CustomCode_event-aggregator_fit-transform",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "input_dataset": {
+      "items": [
+        {
+          "ref": "agg_test_prepared",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "output_dataset": {
+      "items": [
+        {
+          "ref": "feature_test",
+          "appendMode": false
+        }
+      ]
+    },
+    "output_folder": {
+      "items": [
+        {
+          "ref": "rLeTSlkQ",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1659462948960
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1659462948960
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

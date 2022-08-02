@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659462731604
+    "lastModifiedOn": 1659462774160
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,7 +64,7 @@
       },
       {
         "name": "data",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "stato",
@@ -87,36 +87,8 @@
         "type": "string"
       },
       {
-        "name": "sigla_provincia",
-        "type": "string"
-      },
-      {
-        "name": "lat",
-        "type": "double"
-      },
-      {
-        "name": "long",
-        "type": "double"
-      },
-      {
         "name": "totale_casi",
         "type": "bigint"
-      },
-      {
-        "name": "note",
-        "type": "string"
-      },
-      {
-        "name": "codice_nuts_1",
-        "type": "string"
-      },
-      {
-        "name": "codice_nuts_2",
-        "type": "string"
-      },
-      {
-        "name": "codice_nuts_3",
-        "type": "string"
       }
     ],
     "userModified": true

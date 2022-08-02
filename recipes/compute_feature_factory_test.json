@@ -3,7 +3,31 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "time_reference_type": "fixed_timestamp",
+      "input_features_definition": "auto",
+      "use_temporal_window": true,
+      "num_windows_per_type": 10,
+      "whole_history_window_enabled": false,
+      "advance_activate": false,
+      "encoding_feature": false,
+      "population_definition_method": "whole_dataset",
+      "num_populations": 0,
+      "manual_populations_dict_11": {},
+      "manual_populations_dict_12": {},
+      "manual_populations_dict_13": {},
+      "manual_populations_dict_14": {},
+      "manual_populations_dict_15": {},
+      "brute_force_populations_dict": {},
+      "aggregation_keys": [
+        "codice_regione",
+        "codice_provincia"
+      ],
+      "numerical_columns": [],
+      "categorical_columns": [],
+      "timestamp_column": "data",
+      "windows_widths_day": "1"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -45,11 +69,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659461977238
+    "lastModifiedOn": 1659462071152
   },
   "creationTag": {
     "versionNumber": 0,

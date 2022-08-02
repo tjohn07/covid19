@@ -109,6 +109,10 @@
     {
       "objectId": "feature_test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "rLeTSlkQ",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],

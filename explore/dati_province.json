@@ -68,15 +68,99 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "density_heat_map",
+        "type": "lines",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Avg. of totale_casi by data and denominazione_provincia",
         "userEditedName": false,
-        "genericDimension0": [],
-        "genericDimension1": [],
+        "genericDimension0": [
+          {
+            "column": "data",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of totale_casi, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of totale_casi, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [
+          {
+            "column": "denominazione_provincia",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of totale_casi, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of totale_casi, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of totale_casi, descending"
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "totale_casi",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -94,7 +178,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "denominazione_provincia",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {},
+            "isAGlobalFilter": false,
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -155,6 +249,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -172,6 +267,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,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\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

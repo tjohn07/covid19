@@ -32,14 +32,14 @@
             "box": {
               "top": 0,
               "left": 7,
-              "width": 2,
-              "height": 2
+              "width": 5,
+              "height": 6
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -60,11 +60,11 @@
   "name": "Italy COVID-19\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1660661467166
+    "lastModifiedOn": 1660661631539
   },
   "creationTag": {
     "versionNumber": 0,

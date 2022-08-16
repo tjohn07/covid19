@@ -66,11 +66,8 @@
                   "column": "denominazione_provincia",
                   "columnType": "ALPHANUM",
                   "isA": "filter",
-                  "excludedValues": {},
-                  "selectedValues": {
+                  "excludedValues": {
                     "In fase di definizione/aggiornamento": true,
-                    "Lodi": true,
-                    "Terni": true,
                     "L\u0027Aquila": true,
                     "Viterbo": true,
                     "Rieti": true,
@@ -177,6 +174,10 @@
                     "Padova": true,
                     "Rovigo": true
                   },
+                  "selectedValues": {
+                    "Lodi": true,
+                    "Terni": true
+                  },
                   "isAGlobalFilter": true,
                   "explicitExclude": false
                 }
@@ -223,11 +224,11 @@
   "name": "Italy COVID-19\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1660661702372
+    "lastModifiedOn": 1660661794008
   },
   "creationTag": {
     "versionNumber": 0,
